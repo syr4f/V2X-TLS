@@ -3,6 +3,9 @@
 	<name>V2X-TLS</name>
 	<comment></comment>
 	<projects>
+		<project>inet</project>
+		<project>veins</project>
+		<project>veins_inet</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
