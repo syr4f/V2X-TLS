@@ -1,14 +1,14 @@
 version 2
-run Default-0-20220401-01:10:01-43370
+run Default-0-20220401-01:17:54-45056
 attr configname Default
-attr datetime 20220401-01:10:01
+attr datetime 20220401-01:17:54
 attr experiment Default
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvarsf ""
 attr measurement ""
 attr network tls
-attr processid 43370
+attr processid 45056
 attr repetition 0
 attr replication #0
 attr resultdir results
@@ -23,8 +23,8 @@ param *.manager.host "\"localhost\""
 param *.manager.port 9999
 param *.manager.autoShutdown true
 param *.manager.launchConfig "xmldoc(\"osm.launchd.xml\")"
-param *.rsu[0].mobility.x 410
-param *.rsu[0].mobility.y 1180
+param *.rsu[0].mobility.x 2200
+param *.rsu[0].mobility.y 1150
 param *.rsu[0].mobility.z 3
 param *.rsu[*].applType "\"TraCIDemoRSU11p\""
 param *.rsu[*].appl.headerLength "80 bit"
@@ -101,36 +101,36 @@ scalar tls.node[1].veinsmobility maxSpeed 14.550817612756
 scalar tls.node[1].veinsmobility totalDistance 613.77982713759
 scalar tls.node[1].veinsmobility totalCO2Emission 188.84388197987
 scalar tls.manager roiArea 0
-scalar tls.rsu[0].appl generatedWSMs 0
-scalar tls.rsu[0].appl receivedWSMs 0
+scalar tls.rsu[0].appl generatedWSMs 4
+scalar tls.rsu[0].appl receivedWSMs 4
 scalar tls.rsu[0].appl generatedBSMs 0
 scalar tls.rsu[0].appl receivedBSMs 0
 scalar tls.rsu[0].appl generatedWSAs 0
 scalar tls.rsu[0].appl receivedWSAs 0
-scalar tls.rsu[0].nic.phy80211p busyTime 2.9728169364793e-06
+scalar tls.rsu[0].nic.phy80211p busyTime 1.1879375041079e-05
 scalar tls.rsu[0].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.rsu[0].nic.mac1609_4 ReceivedBroadcasts 0
-scalar tls.rsu[0].nic.mac1609_4 SentPackets 0
+scalar tls.rsu[0].nic.mac1609_4 ReceivedBroadcasts 4
+scalar tls.rsu[0].nic.mac1609_4 SentPackets 1
 scalar tls.rsu[0].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.rsu[0].nic.mac1609_4 RetriesExceeded 0
-scalar tls.rsu[0].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.rsu[0].nic.mac1609_4 SNIRLostPackets 0
 scalar tls.rsu[0].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.rsu[0].nic.mac1609_4 TotalLostPackets 1
+scalar tls.rsu[0].nic.mac1609_4 TotalLostPackets 0
 scalar tls.rsu[0].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.rsu[0].nic.mac1609_4 TooLittleTime 0
-scalar tls.rsu[0].nic.mac1609_4 TimesIntoBackoff 0
-scalar tls.rsu[0].nic.mac1609_4 SlotsBackoff 0
+scalar tls.rsu[0].nic.mac1609_4 TimesIntoBackoff 1
+scalar tls.rsu[0].nic.mac1609_4 SlotsBackoff 2
 scalar tls.rsu[0].nic.mac1609_4 NumInternalContention 0
-scalar tls.rsu[0].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.rsu[0].nic.mac1609_4 totalBusyTime 0.001161
 scalar tls.rsu[0].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.rsu[0].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.rsu[0].nic.mac1609_4 sentPackets:count 0
+scalar tls.rsu[0].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.rsu[0].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.rsu[0].nic.mac1609_4 channelBusy:timeavg 2.9728169364793e-06
+scalar tls.rsu[0].nic.mac1609_4 channelBusy:timeavg 1.4862019852039e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[0].appl generatedWSMs 0
 scalar tls.node[0].appl receivedWSMs 0
@@ -138,21 +138,21 @@ scalar tls.node[0].appl generatedBSMs 0
 scalar tls.node[0].appl receivedBSMs 0
 scalar tls.node[0].appl generatedWSAs 0
 scalar tls.node[0].appl receivedWSAs 0
-scalar tls.node[0].nic.phy80211p busyTime 3.0114046727454e-06
+scalar tls.node[0].nic.phy80211p busyTime 1.5041769252023e-05
 scalar tls.node[0].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[0].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[0].nic.mac1609_4 SentPackets 0
 scalar tls.node[0].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[0].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[0].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[0].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[0].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[0].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[0].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[0].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[0].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[0].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[0].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[0].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[0].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[0].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[0].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[0].nic.mac1609_4 sentAcks:count 0
@@ -161,36 +161,36 @@ scalar tls.node[0].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[0].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[0].nic.mac1609_4 channelBusy:timeavg 3.0114046727454e-06
+scalar tls.node[0].nic.mac1609_4 channelBusy:timeavg 1.5041769252023e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[0].veinsmobility startTime 1
 scalar tls.node[0].veinsmobility totalTime 77
-scalar tls.node[0].veinsmobility stopTime 78.040459590073
+scalar tls.node[0].veinsmobility stopTime 78.118587618539
 scalar tls.node[0].veinsmobility minSpeed 1.8798766718246
 scalar tls.node[0].veinsmobility maxSpeed 24.021750350923
 scalar tls.node[0].veinsmobility totalDistance 1049.9988242507
 scalar tls.node[0].veinsmobility totalCO2Emission 289.12949457789
 scalar tls.node[2].appl generatedWSMs 0
-scalar tls.node[2].appl receivedWSMs 1
+scalar tls.node[2].appl receivedWSMs 3
 scalar tls.node[2].appl generatedBSMs 0
 scalar tls.node[2].appl receivedBSMs 0
 scalar tls.node[2].appl generatedWSAs 0
 scalar tls.node[2].appl receivedWSAs 0
-scalar tls.node[2].nic.phy80211p busyTime 3.3123711831394e-06
+scalar tls.node[2].nic.phy80211p busyTime 1.6543402247499e-05
 scalar tls.node[2].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[2].nic.mac1609_4 ReceivedBroadcasts 1
+scalar tls.node[2].nic.mac1609_4 ReceivedBroadcasts 3
 scalar tls.node[2].nic.mac1609_4 SentPackets 0
 scalar tls.node[2].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[2].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[2].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[2].nic.mac1609_4 SNIRLostPackets 2
 scalar tls.node[2].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[2].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[2].nic.mac1609_4 TotalLostPackets 2
 scalar tls.node[2].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[2].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[2].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[2].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[2].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[2].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[2].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[2].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[2].nic.mac1609_4 sentAcks:count 0
@@ -199,62 +199,62 @@ scalar tls.node[2].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[2].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[2].nic.mac1609_4 channelBusy:timeavg 3.3123711831394e-06
+scalar tls.node[2].nic.mac1609_4 channelBusy:timeavg 1.6543402247499e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[2].veinsmobility startTime 8
 scalar tls.node[2].veinsmobility totalTime 70
-scalar tls.node[2].veinsmobility stopTime 78.040459590073
+scalar tls.node[2].veinsmobility stopTime 78.118587618539
 scalar tls.node[2].veinsmobility minSpeed 2.5498698164476
 scalar tls.node[2].veinsmobility maxSpeed 28.538460564699
 scalar tls.node[2].veinsmobility totalDistance 1404.5688584653
 scalar tls.node[2].veinsmobility totalCO2Emission 413.42433555058
-scalar tls.node[3].appl generatedWSMs 0
-scalar tls.node[3].appl receivedWSMs 1
+scalar tls.node[3].appl generatedWSMs 1
+scalar tls.node[3].appl receivedWSMs 3
 scalar tls.node[3].appl generatedBSMs 0
 scalar tls.node[3].appl receivedBSMs 0
 scalar tls.node[3].appl generatedWSAs 0
 scalar tls.node[3].appl receivedWSAs 0
-scalar tls.node[3].nic.phy80211p busyTime 3.4605968010749e-06
+scalar tls.node[3].nic.phy80211p busyTime 1.382627425467e-05
 scalar tls.node[3].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[3].nic.mac1609_4 ReceivedBroadcasts 1
-scalar tls.node[3].nic.mac1609_4 SentPackets 0
+scalar tls.node[3].nic.mac1609_4 ReceivedBroadcasts 3
+scalar tls.node[3].nic.mac1609_4 SentPackets 1
 scalar tls.node[3].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[3].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[3].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[3].nic.mac1609_4 SNIRLostPackets 1
 scalar tls.node[3].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[3].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[3].nic.mac1609_4 TotalLostPackets 1
 scalar tls.node[3].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[3].nic.mac1609_4 TooLittleTime 0
-scalar tls.node[3].nic.mac1609_4 TimesIntoBackoff 0
-scalar tls.node[3].nic.mac1609_4 SlotsBackoff 0
+scalar tls.node[3].nic.mac1609_4 TimesIntoBackoff 1
+scalar tls.node[3].nic.mac1609_4 SlotsBackoff 1
 scalar tls.node[3].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[3].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[3].nic.mac1609_4 totalBusyTime 0.001161
 scalar tls.node[3].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[3].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.node[3].nic.mac1609_4 sentPackets:count 0
+scalar tls.node[3].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[3].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[3].nic.mac1609_4 channelBusy:timeavg 3.4605968010749e-06
+scalar tls.node[3].nic.mac1609_4 channelBusy:timeavg 1.7297741820767e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[3].veinsmobility startTime 11
 scalar tls.node[3].veinsmobility totalTime 67
-scalar tls.node[3].veinsmobility stopTime 78.040459590073
+scalar tls.node[3].veinsmobility stopTime 78.118587618539
 scalar tls.node[3].veinsmobility minSpeed 1.528189688758
 scalar tls.node[3].veinsmobility maxSpeed 28.204955834178
 scalar tls.node[3].veinsmobility totalDistance 1070.2306979527
 scalar tls.node[3].veinsmobility totalCO2Emission 388.15870002746
 scalar tls.node[4].appl generatedWSMs 0
-scalar tls.node[4].appl receivedWSMs 1
+scalar tls.node[4].appl receivedWSMs 5
 scalar tls.node[4].appl generatedBSMs 0
 scalar tls.node[4].appl receivedBSMs 0
 scalar tls.node[4].appl generatedWSAs 0
 scalar tls.node[4].appl receivedWSAs 0
-scalar tls.node[4].nic.phy80211p busyTime 3.6801762155385e-06
+scalar tls.node[4].nic.phy80211p busyTime 1.8378104513531e-05
 scalar tls.node[4].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[4].nic.mac1609_4 ReceivedBroadcasts 1
+scalar tls.node[4].nic.mac1609_4 ReceivedBroadcasts 5
 scalar tls.node[4].nic.mac1609_4 SentPackets 0
 scalar tls.node[4].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[4].nic.mac1609_4 RetriesExceeded 0
@@ -266,7 +266,7 @@ scalar tls.node[4].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[4].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[4].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[4].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[4].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[4].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[4].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[4].nic.mac1609_4 sentAcks:count 0
@@ -275,49 +275,49 @@ scalar tls.node[4].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[4].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[4].nic.mac1609_4 channelBusy:timeavg 3.6801762155385e-06
+scalar tls.node[4].nic.mac1609_4 channelBusy:timeavg 1.8378104513531e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[4].veinsmobility startTime 15
 scalar tls.node[4].veinsmobility totalTime 63
-scalar tls.node[4].veinsmobility stopTime 78.040459590073
+scalar tls.node[4].veinsmobility stopTime 78.118587618539
 scalar tls.node[4].veinsmobility minSpeed 2.0997949530138
 scalar tls.node[4].veinsmobility maxSpeed 12.197805097024
 scalar tls.node[4].veinsmobility totalDistance 626.29622416529
 scalar tls.node[4].veinsmobility totalCO2Emission 154.5112300991
-scalar tls.node[5].appl generatedWSMs 0
-scalar tls.node[5].appl receivedWSMs 1
+scalar tls.node[5].appl generatedWSMs 1
+scalar tls.node[5].appl receivedWSMs 3
 scalar tls.node[5].appl generatedBSMs 0
 scalar tls.node[5].appl receivedBSMs 0
 scalar tls.node[5].appl generatedWSAs 0
 scalar tls.node[5].appl receivedWSAs 0
-scalar tls.node[5].nic.phy80211p busyTime 4.0672884066379e-06
+scalar tls.node[5].nic.phy80211p busyTime 1.6246900329496e-05
 scalar tls.node[5].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[5].nic.mac1609_4 ReceivedBroadcasts 1
-scalar tls.node[5].nic.mac1609_4 SentPackets 0
+scalar tls.node[5].nic.mac1609_4 ReceivedBroadcasts 3
+scalar tls.node[5].nic.mac1609_4 SentPackets 1
 scalar tls.node[5].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[5].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[5].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[5].nic.mac1609_4 SNIRLostPackets 1
 scalar tls.node[5].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[5].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[5].nic.mac1609_4 TotalLostPackets 1
 scalar tls.node[5].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[5].nic.mac1609_4 TooLittleTime 0
-scalar tls.node[5].nic.mac1609_4 TimesIntoBackoff 0
+scalar tls.node[5].nic.mac1609_4 TimesIntoBackoff 1
 scalar tls.node[5].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[5].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[5].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[5].nic.mac1609_4 totalBusyTime 0.001161
 scalar tls.node[5].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[5].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.node[5].nic.mac1609_4 sentPackets:count 0
+scalar tls.node[5].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[5].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[5].nic.mac1609_4 channelBusy:timeavg 4.0672884066379e-06
+scalar tls.node[5].nic.mac1609_4 channelBusy:timeavg 2.032613284757e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[5].veinsmobility startTime 21
 scalar tls.node[5].veinsmobility totalTime 57
-scalar tls.node[5].veinsmobility stopTime 78.040459590073
+scalar tls.node[5].veinsmobility stopTime 78.118587618539
 scalar tls.node[5].veinsmobility minSpeed 3.9135911973856
 scalar tls.node[5].veinsmobility maxSpeed 31.891040238208
 scalar tls.node[5].veinsmobility totalDistance 935.39005142928
@@ -328,21 +328,21 @@ scalar tls.node[6].appl generatedBSMs 0
 scalar tls.node[6].appl receivedBSMs 0
 scalar tls.node[6].appl generatedWSAs 0
 scalar tls.node[6].appl receivedWSAs 0
-scalar tls.node[6].nic.phy80211p busyTime 4.3740194144815e-06
+scalar tls.node[6].nic.phy80211p busyTime 2.1837930035533e-05
 scalar tls.node[6].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[6].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[6].nic.mac1609_4 SentPackets 0
 scalar tls.node[6].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[6].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[6].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[6].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[6].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[6].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[6].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[6].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[6].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[6].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[6].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[6].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[6].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[6].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[6].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[6].nic.mac1609_4 sentAcks:count 0
@@ -351,24 +351,24 @@ scalar tls.node[6].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[6].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[6].nic.mac1609_4 channelBusy:timeavg 4.3740194144815e-06
+scalar tls.node[6].nic.mac1609_4 channelBusy:timeavg 2.1837930035533e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[6].veinsmobility startTime 25
 scalar tls.node[6].veinsmobility totalTime 53
-scalar tls.node[6].veinsmobility stopTime 78.040459590073
+scalar tls.node[6].veinsmobility stopTime 78.118587618539
 scalar tls.node[6].veinsmobility minSpeed 4.1791195254437
 scalar tls.node[6].veinsmobility maxSpeed 26.029015697722
 scalar tls.node[6].veinsmobility totalDistance 759.91231857057
 scalar tls.node[6].veinsmobility totalCO2Emission 263.82233268061
 scalar tls.node[7].appl generatedWSMs 1
-scalar tls.node[7].appl receivedWSMs 0
+scalar tls.node[7].appl receivedWSMs 4
 scalar tls.node[7].appl generatedBSMs 0
 scalar tls.node[7].appl receivedBSMs 0
 scalar tls.node[7].appl generatedWSAs 0
 scalar tls.node[7].appl receivedWSAs 0
-scalar tls.node[7].nic.phy80211p busyTime 0
+scalar tls.node[7].nic.phy80211p busyTime 1.8516084432849e-05
 scalar tls.node[7].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[7].nic.mac1609_4 ReceivedBroadcasts 0
+scalar tls.node[7].nic.mac1609_4 ReceivedBroadcasts 4
 scalar tls.node[7].nic.mac1609_4 SentPackets 1
 scalar tls.node[7].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[7].nic.mac1609_4 RetriesExceeded 0
@@ -380,7 +380,7 @@ scalar tls.node[7].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[7].nic.mac1609_4 TimesIntoBackoff 1
 scalar tls.node[7].nic.mac1609_4 SlotsBackoff 2
 scalar tls.node[7].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[7].nic.mac1609_4 totalBusyTime 0.000233
+scalar tls.node[7].nic.mac1609_4 totalBusyTime 0.001161
 scalar tls.node[7].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[7].nic.mac1609_4 sentAcks:count 0
@@ -389,36 +389,36 @@ scalar tls.node[7].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[7].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[7].nic.mac1609_4 channelBusy:timeavg 4.6562322150659e-06
+scalar tls.node[7].nic.mac1609_4 channelBusy:timeavg 2.3165058218252e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[7].veinsmobility startTime 28
 scalar tls.node[7].veinsmobility totalTime 50
-scalar tls.node[7].veinsmobility stopTime 78.040459590073
+scalar tls.node[7].veinsmobility stopTime 78.118587618539
 scalar tls.node[7].veinsmobility minSpeed 0
 scalar tls.node[7].veinsmobility maxSpeed 16.919785389324
 scalar tls.node[7].veinsmobility totalDistance 361.02291725895
 scalar tls.node[7].veinsmobility totalCO2Emission 165.48341719186
 scalar tls.node[8].appl generatedWSMs 0
-scalar tls.node[8].appl receivedWSMs 0
+scalar tls.node[8].appl receivedWSMs 1
 scalar tls.node[8].appl generatedBSMs 0
 scalar tls.node[8].appl receivedBSMs 0
 scalar tls.node[8].appl generatedWSAs 0
 scalar tls.node[8].appl receivedWSAs 0
-scalar tls.node[8].nic.phy80211p busyTime 5.150924349163e-06
+scalar tls.node[8].nic.phy80211p busyTime 2.5710024653417e-05
 scalar tls.node[8].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[8].nic.mac1609_4 ReceivedBroadcasts 0
+scalar tls.node[8].nic.mac1609_4 ReceivedBroadcasts 1
 scalar tls.node[8].nic.mac1609_4 SentPackets 0
 scalar tls.node[8].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[8].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[8].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[8].nic.mac1609_4 SNIRLostPackets 4
 scalar tls.node[8].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[8].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[8].nic.mac1609_4 TotalLostPackets 4
 scalar tls.node[8].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[8].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[8].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[8].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[8].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[8].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[8].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[8].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[8].nic.mac1609_4 sentAcks:count 0
@@ -427,49 +427,49 @@ scalar tls.node[8].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[8].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[8].nic.mac1609_4 channelBusy:timeavg 5.150924349163e-06
+scalar tls.node[8].nic.mac1609_4 channelBusy:timeavg 2.5710024653417e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[8].veinsmobility startTime 33
 scalar tls.node[8].veinsmobility totalTime 45
-scalar tls.node[8].veinsmobility stopTime 78.040459590073
+scalar tls.node[8].veinsmobility stopTime 78.118587618539
 scalar tls.node[8].veinsmobility minSpeed 1.7117402136093
 scalar tls.node[8].veinsmobility maxSpeed 14.585550111882
 scalar tls.node[8].veinsmobility totalDistance 492.78973759207
 scalar tls.node[8].veinsmobility totalCO2Emission 149.43271317827
-scalar tls.node[9].appl generatedWSMs 0
-scalar tls.node[9].appl receivedWSMs 1
+scalar tls.node[9].appl generatedWSMs 1
+scalar tls.node[9].appl receivedWSMs 2
 scalar tls.node[9].appl generatedBSMs 0
 scalar tls.node[9].appl receivedBSMs 0
 scalar tls.node[9].appl generatedWSAs 0
 scalar tls.node[9].appl receivedWSAs 0
-scalar tls.node[9].nic.phy80211p busyTime 1.0780554027983e-05
+scalar tls.node[9].nic.phy80211p busyTime 2.1522040754438e-05
 scalar tls.node[9].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[9].nic.mac1609_4 ReceivedBroadcasts 1
-scalar tls.node[9].nic.mac1609_4 SentPackets 0
+scalar tls.node[9].nic.mac1609_4 ReceivedBroadcasts 2
+scalar tls.node[9].nic.mac1609_4 SentPackets 1
 scalar tls.node[9].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[9].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[9].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[9].nic.mac1609_4 SNIRLostPackets 2
 scalar tls.node[9].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[9].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[9].nic.mac1609_4 TotalLostPackets 2
 scalar tls.node[9].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[9].nic.mac1609_4 TooLittleTime 0
-scalar tls.node[9].nic.mac1609_4 TimesIntoBackoff 0
-scalar tls.node[9].nic.mac1609_4 SlotsBackoff 0
+scalar tls.node[9].nic.mac1609_4 TimesIntoBackoff 1
+scalar tls.node[9].nic.mac1609_4 SlotsBackoff 3
 scalar tls.node[9].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[9].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[9].nic.mac1609_4 totalBusyTime 0.001161
 scalar tls.node[9].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[9].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.node[9].nic.mac1609_4 sentPackets:count 0
+scalar tls.node[9].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[9].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[9].nic.mac1609_4 channelBusy:timeavg 5.4066056268059e-06
+scalar tls.node[9].nic.mac1609_4 channelBusy:timeavg 2.6925742797309e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[9].veinsmobility startTime 35
 scalar tls.node[9].veinsmobility totalTime 43
-scalar tls.node[9].veinsmobility stopTime 78.040459590073
+scalar tls.node[9].veinsmobility stopTime 78.118587618539
 scalar tls.node[9].veinsmobility minSpeed 1.6383382474538
 scalar tls.node[9].veinsmobility maxSpeed 17.502547337487
 scalar tls.node[9].veinsmobility totalDistance 473.85591041969
@@ -480,21 +480,21 @@ scalar tls.node[10].appl generatedBSMs 0
 scalar tls.node[10].appl receivedBSMs 0
 scalar tls.node[10].appl generatedWSAs 0
 scalar tls.node[10].appl receivedWSAs 0
-scalar tls.node[10].nic.phy80211p busyTime 7.021694095009e-06
+scalar tls.node[10].nic.phy80211p busyTime 3.5025648235997e-05
 scalar tls.node[10].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[10].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[10].nic.mac1609_4 SentPackets 0
 scalar tls.node[10].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[10].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[10].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[10].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[10].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[10].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[10].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[10].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[10].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[10].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[10].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[10].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[10].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[10].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[10].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[10].nic.mac1609_4 sentAcks:count 0
@@ -503,11 +503,11 @@ scalar tls.node[10].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[10].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[10].nic.mac1609_4 channelBusy:timeavg 7.021694095009e-06
+scalar tls.node[10].nic.mac1609_4 channelBusy:timeavg 3.5025648235997e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[10].veinsmobility startTime 45
 scalar tls.node[10].veinsmobility totalTime 33
-scalar tls.node[10].veinsmobility stopTime 78.040459590073
+scalar tls.node[10].veinsmobility stopTime 78.118587618539
 scalar tls.node[10].veinsmobility minSpeed 14.521379687501
 scalar tls.node[10].veinsmobility maxSpeed 24.936063679782
 scalar tls.node[10].veinsmobility totalDistance 630.36927751206
@@ -518,21 +518,21 @@ scalar tls.node[11].appl generatedBSMs 0
 scalar tls.node[11].appl receivedBSMs 0
 scalar tls.node[11].appl generatedWSAs 0
 scalar tls.node[11].appl receivedWSAs 0
-scalar tls.node[11].nic.phy80211p busyTime 8.5797358298293e-06
+scalar tls.node[11].nic.phy80211p busyTime 4.2775089039187e-05
 scalar tls.node[11].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[11].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[11].nic.mac1609_4 SentPackets 0
 scalar tls.node[11].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[11].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[11].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[11].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[11].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[11].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[11].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[11].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[11].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[11].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[11].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[11].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[11].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[11].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[11].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[11].nic.mac1609_4 sentAcks:count 0
@@ -541,36 +541,36 @@ scalar tls.node[11].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[11].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[11].nic.mac1609_4 channelBusy:timeavg 8.5797358298293e-06
+scalar tls.node[11].nic.mac1609_4 channelBusy:timeavg 4.2775089039187e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[11].veinsmobility startTime 51
 scalar tls.node[11].veinsmobility totalTime 27
-scalar tls.node[11].veinsmobility stopTime 78.040459590073
+scalar tls.node[11].veinsmobility stopTime 78.118587618539
 scalar tls.node[11].veinsmobility minSpeed 4.6943491734431
 scalar tls.node[11].veinsmobility maxSpeed 13.075475339985
 scalar tls.node[11].veinsmobility totalDistance 257.74049242533
 scalar tls.node[11].veinsmobility totalCO2Emission 85.257995466881
 scalar tls.node[12].appl generatedWSMs 0
-scalar tls.node[12].appl receivedWSMs 0
+scalar tls.node[12].appl receivedWSMs 2
 scalar tls.node[12].appl generatedBSMs 0
 scalar tls.node[12].appl receivedBSMs 0
 scalar tls.node[12].appl generatedWSAs 0
 scalar tls.node[12].appl receivedWSAs 0
-scalar tls.node[12].nic.phy80211p busyTime 2.0138487176702e-05
+scalar tls.node[12].nic.phy80211p busyTime 5.0176075595111e-05
 scalar tls.node[12].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[12].nic.mac1609_4 ReceivedBroadcasts 0
+scalar tls.node[12].nic.mac1609_4 ReceivedBroadcasts 2
 scalar tls.node[12].nic.mac1609_4 SentPackets 0
 scalar tls.node[12].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[12].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[12].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[12].nic.mac1609_4 SNIRLostPackets 3
 scalar tls.node[12].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[12].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[12].nic.mac1609_4 TotalLostPackets 3
 scalar tls.node[12].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[12].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[12].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[12].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[12].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[12].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[12].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[12].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[12].nic.mac1609_4 sentAcks:count 0
@@ -579,74 +579,74 @@ scalar tls.node[12].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[12].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[12].nic.mac1609_4 channelBusy:timeavg 1.0097038042602e-05
+scalar tls.node[12].nic.mac1609_4 channelBusy:timeavg 5.0176075595111e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[12].veinsmobility startTime 55
 scalar tls.node[12].veinsmobility totalTime 23
-scalar tls.node[12].veinsmobility stopTime 78.040459590073
+scalar tls.node[12].veinsmobility stopTime 78.118587618539
 scalar tls.node[12].veinsmobility minSpeed 1.5147052048706
 scalar tls.node[12].veinsmobility maxSpeed 12.236767274235
 scalar tls.node[12].veinsmobility totalDistance 149.70239590712
 scalar tls.node[12].veinsmobility totalCO2Emission 53.444054631047
-scalar tls.node[13].appl generatedWSMs 1
-scalar tls.node[13].appl receivedWSMs 1
+scalar tls.node[13].appl generatedWSMs 0
+scalar tls.node[13].appl receivedWSMs 3
 scalar tls.node[13].appl generatedBSMs 0
 scalar tls.node[13].appl receivedBSMs 0
 scalar tls.node[13].appl generatedWSAs 0
 scalar tls.node[13].appl receivedWSAs 0
-scalar tls.node[13].nic.phy80211p busyTime 1.157658081429e-05
+scalar tls.node[13].nic.phy80211p busyTime 5.7658123025052e-05
 scalar tls.node[13].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[13].nic.mac1609_4 ReceivedBroadcasts 1
-scalar tls.node[13].nic.mac1609_4 SentPackets 1
+scalar tls.node[13].nic.mac1609_4 ReceivedBroadcasts 3
+scalar tls.node[13].nic.mac1609_4 SentPackets 0
 scalar tls.node[13].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[13].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[13].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[13].nic.mac1609_4 SNIRLostPackets 2
 scalar tls.node[13].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[13].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[13].nic.mac1609_4 TotalLostPackets 2
 scalar tls.node[13].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[13].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[13].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[13].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[13].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[13].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[13].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[13].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[13].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.node[13].nic.mac1609_4 sentPackets:count 1
+scalar tls.node[13].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[13].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[13].nic.mac1609_4 channelBusy:timeavg 1.1680430578346e-05
+scalar tls.node[13].nic.mac1609_4 channelBusy:timeavg 5.7658123025052e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[13].veinsmobility startTime 58
 scalar tls.node[13].veinsmobility totalTime 20
-scalar tls.node[13].veinsmobility stopTime 78.040459590073
+scalar tls.node[13].veinsmobility stopTime 78.118587618539
 scalar tls.node[13].veinsmobility minSpeed 4.515689553849
 scalar tls.node[13].veinsmobility maxSpeed 13.668093348819
 scalar tls.node[13].veinsmobility totalDistance 208.63779704033
 scalar tls.node[13].veinsmobility totalCO2Emission 57.885078479596
 scalar tls.node[14].appl generatedWSMs 0
-scalar tls.node[14].appl receivedWSMs 1
+scalar tls.node[14].appl receivedWSMs 3
 scalar tls.node[14].appl generatedBSMs 0
 scalar tls.node[14].appl receivedBSMs 0
 scalar tls.node[14].appl generatedWSAs 0
 scalar tls.node[14].appl receivedWSAs 0
-scalar tls.node[14].nic.phy80211p busyTime 1.3614656269902e-05
+scalar tls.node[14].nic.phy80211p busyTime 6.7762599686889e-05
 scalar tls.node[14].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[14].nic.mac1609_4 ReceivedBroadcasts 1
+scalar tls.node[14].nic.mac1609_4 ReceivedBroadcasts 3
 scalar tls.node[14].nic.mac1609_4 SentPackets 0
 scalar tls.node[14].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[14].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[14].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[14].nic.mac1609_4 SNIRLostPackets 2
 scalar tls.node[14].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[14].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[14].nic.mac1609_4 TotalLostPackets 2
 scalar tls.node[14].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[14].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[14].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[14].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[14].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[14].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[14].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[14].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[14].nic.mac1609_4 sentAcks:count 0
@@ -655,11 +655,11 @@ scalar tls.node[14].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[14].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[14].nic.mac1609_4 channelBusy:timeavg 1.3614656269902e-05
+scalar tls.node[14].nic.mac1609_4 channelBusy:timeavg 6.7762599686889e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[14].veinsmobility startTime 61
 scalar tls.node[14].veinsmobility totalTime 17
-scalar tls.node[14].veinsmobility stopTime 78.040459590073
+scalar tls.node[14].veinsmobility stopTime 78.118587618539
 scalar tls.node[14].veinsmobility minSpeed 1.5539981738664
 scalar tls.node[14].veinsmobility maxSpeed 8.4060003279241
 scalar tls.node[14].veinsmobility totalDistance 119.57053925882
@@ -670,21 +670,21 @@ scalar tls.node[15].appl generatedBSMs 0
 scalar tls.node[15].appl receivedBSMs 0
 scalar tls.node[15].appl generatedWSAs 0
 scalar tls.node[15].appl receivedWSAs 0
-scalar tls.node[15].nic.phy80211p busyTime 1.7790784013211e-05
+scalar tls.node[15].nic.phy80211p busyTime 8.8424153097145e-05
 scalar tls.node[15].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[15].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[15].nic.mac1609_4 SentPackets 0
 scalar tls.node[15].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[15].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[15].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[15].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[15].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[15].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[15].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[15].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[15].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[15].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[15].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[15].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[15].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[15].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[15].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[15].nic.mac1609_4 sentAcks:count 0
@@ -693,11 +693,11 @@ scalar tls.node[15].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[15].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[15].nic.mac1609_4 channelBusy:timeavg 1.7790784013211e-05
+scalar tls.node[15].nic.mac1609_4 channelBusy:timeavg 8.8424153097145e-05
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[15].veinsmobility startTime 65
 scalar tls.node[15].veinsmobility totalTime 13
-scalar tls.node[15].veinsmobility stopTime 78.040459590073
+scalar tls.node[15].veinsmobility stopTime 78.118587618539
 scalar tls.node[15].veinsmobility minSpeed 2.4260216072435
 scalar tls.node[15].veinsmobility maxSpeed 8.470912232896
 scalar tls.node[15].veinsmobility totalDistance 95.555181464543
@@ -708,21 +708,21 @@ scalar tls.node[16].appl generatedBSMs 0
 scalar tls.node[16].appl receivedBSMs 0
 scalar tls.node[16].appl generatedWSAs 0
 scalar tls.node[16].appl receivedWSAs 0
-scalar tls.node[16].nic.phy80211p busyTime 2.3106511999648e-05
+scalar tls.node[16].nic.phy80211p busyTime 0.00011464050554592
 scalar tls.node[16].nic.mac1609_4 ReceivedUnicastPackets 0
 scalar tls.node[16].nic.mac1609_4 ReceivedBroadcasts 0
 scalar tls.node[16].nic.mac1609_4 SentPackets 0
 scalar tls.node[16].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[16].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[16].nic.mac1609_4 SNIRLostPackets 1
+scalar tls.node[16].nic.mac1609_4 SNIRLostPackets 5
 scalar tls.node[16].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[16].nic.mac1609_4 TotalLostPackets 1
+scalar tls.node[16].nic.mac1609_4 TotalLostPackets 5
 scalar tls.node[16].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[16].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[16].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[16].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[16].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[16].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[16].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[16].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[16].nic.mac1609_4 sentAcks:count 0
@@ -731,25 +731,25 @@ scalar tls.node[16].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[16].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[16].nic.mac1609_4 channelBusy:timeavg 2.3106511999648e-05
+scalar tls.node[16].nic.mac1609_4 channelBusy:timeavg 0.00011464050554592
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[16].veinsmobility startTime 68
 scalar tls.node[16].veinsmobility totalTime 10
-scalar tls.node[16].veinsmobility stopTime 78.040459590073
+scalar tls.node[16].veinsmobility stopTime 78.118587618539
 scalar tls.node[16].veinsmobility minSpeed 1.7712771047372
 scalar tls.node[16].veinsmobility maxSpeed 10.943179422635
 scalar tls.node[16].veinsmobility totalDistance 67.83258737096
 scalar tls.node[16].veinsmobility totalCO2Emission 39.531840689903
-scalar tls.node[17].appl generatedWSMs 0
-scalar tls.node[17].appl receivedWSMs 1
+scalar tls.node[17].appl generatedWSMs 1
+scalar tls.node[17].appl receivedWSMs 5
 scalar tls.node[17].appl generatedBSMs 0
 scalar tls.node[17].appl receivedBSMs 0
 scalar tls.node[17].appl generatedWSAs 0
 scalar tls.node[17].appl receivedWSAs 0
-scalar tls.node[17].nic.phy80211p busyTime 3.295239423391e-05
+scalar tls.node[17].nic.phy80211p busyTime 0.00016295367313862
 scalar tls.node[17].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[17].nic.mac1609_4 ReceivedBroadcasts 1
-scalar tls.node[17].nic.mac1609_4 SentPackets 0
+scalar tls.node[17].nic.mac1609_4 ReceivedBroadcasts 5
+scalar tls.node[17].nic.mac1609_4 SentPackets 1
 scalar tls.node[17].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[17].nic.mac1609_4 RetriesExceeded 0
 scalar tls.node[17].nic.mac1609_4 SNIRLostPackets 0
@@ -760,45 +760,45 @@ scalar tls.node[17].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[17].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[17].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[17].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[17].nic.mac1609_4 totalBusyTime 0.000232
+scalar tls.node[17].nic.mac1609_4 totalBusyTime 0.00116
 scalar tls.node[17].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[17].nic.mac1609_4 sentAcks:count 0
 attr source org_car2x_veins_modules_mac_sigSentAck
-scalar tls.node[17].nic.mac1609_4 sentPackets:count 0
+scalar tls.node[17].nic.mac1609_4 sentPackets:count 1
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[17].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[17].nic.mac1609_4 channelBusy:timeavg 3.295239423391e-05
+scalar tls.node[17].nic.mac1609_4 channelBusy:timeavg 0.00016310088632979
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[17].veinsmobility startTime 71
 scalar tls.node[17].veinsmobility totalTime 7
-scalar tls.node[17].veinsmobility stopTime 78.040459590073
+scalar tls.node[17].veinsmobility stopTime 78.118587618539
 scalar tls.node[17].veinsmobility minSpeed 1.978090670798
 scalar tls.node[17].veinsmobility maxSpeed 12.506623749435
 scalar tls.node[17].veinsmobility totalDistance 49.780771268937
 scalar tls.node[17].veinsmobility totalCO2Emission 30.018145300124
 scalar tls.node[18].appl generatedWSMs 0
-scalar tls.node[18].appl receivedWSMs 0
+scalar tls.node[18].appl receivedWSMs 2
 scalar tls.node[18].appl generatedBSMs 0
 scalar tls.node[18].appl receivedBSMs 0
 scalar tls.node[18].appl generatedWSAs 0
 scalar tls.node[18].appl receivedWSAs 0
-scalar tls.node[18].nic.phy80211p busyTime 0.0057341164253372
+scalar tls.node[18].nic.phy80211p busyTime 0.0078254375240262
 scalar tls.node[18].nic.mac1609_4 ReceivedUnicastPackets 0
-scalar tls.node[18].nic.mac1609_4 ReceivedBroadcasts 0
+scalar tls.node[18].nic.mac1609_4 ReceivedBroadcasts 2
 scalar tls.node[18].nic.mac1609_4 SentPackets 0
 scalar tls.node[18].nic.mac1609_4 SentAcknowledgements 0
 scalar tls.node[18].nic.mac1609_4 RetriesExceeded 0
-scalar tls.node[18].nic.mac1609_4 SNIRLostPackets 0
+scalar tls.node[18].nic.mac1609_4 SNIRLostPackets 2
 scalar tls.node[18].nic.mac1609_4 RXTXLostPackets 0
-scalar tls.node[18].nic.mac1609_4 TotalLostPackets 0
+scalar tls.node[18].nic.mac1609_4 TotalLostPackets 2
 scalar tls.node[18].nic.mac1609_4 DroppedPacketsInMac 0
 scalar tls.node[18].nic.mac1609_4 TooLittleTime 0
 scalar tls.node[18].nic.mac1609_4 TimesIntoBackoff 0
 scalar tls.node[18].nic.mac1609_4 SlotsBackoff 0
 scalar tls.node[18].nic.mac1609_4 NumInternalContention 0
-scalar tls.node[18].nic.mac1609_4 totalBusyTime 0
+scalar tls.node[18].nic.mac1609_4 totalBusyTime 0.000928
 scalar tls.node[18].nic.mac1609_4 retriesExceeded:count 0
 attr source org_car2x_veins_modules_mac_sigRetriesExceeded
 scalar tls.node[18].nic.mac1609_4 sentAcks:count 0
@@ -807,11 +807,11 @@ scalar tls.node[18].nic.mac1609_4 sentPackets:count 0
 attr source org_car2x_veins_modules_mac_sigSentPacket
 scalar tls.node[18].nic.mac1609_4 collisions:count 0
 attr source org_car2x_veins_modules_mac_sigCollision
-scalar tls.node[18].nic.mac1609_4 channelBusy:timeavg 1.8015827611818e-05
+scalar tls.node[18].nic.mac1609_4 channelBusy:timeavg 0.0078254375240262
 attr source org_car2x_veins_modules_mac_sigChannelBusy
 scalar tls.node[18].veinsmobility startTime 78
 scalar tls.node[18].veinsmobility totalTime 0
-scalar tls.node[18].veinsmobility stopTime 78.040459590073
+scalar tls.node[18].veinsmobility stopTime 78.118587618539
 scalar tls.node[18].veinsmobility totalDistance 0
 scalar tls.node[18].veinsmobility totalCO2Emission 0
 
