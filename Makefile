@@ -34,7 +34,7 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc, .msg and .sm files
-OBJS =
+OBJS = $O/TraCI/TraCIDemoEV.o $O/TraCI/TraCIRSU.o
 
 # Message files
 MSGFILES =
